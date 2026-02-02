@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Tables sources chargées depuis les CSV dans Supabase
+    database: postgres
+    schema: public
+    tables:
+      - name: products
+        description: Table des produits
+      - name: customers
+        description: Table des clients
+      - name: vendors
+        description: Table des vendeurs
+      - name: orders
+        description: Table des commandes (table de faits)
